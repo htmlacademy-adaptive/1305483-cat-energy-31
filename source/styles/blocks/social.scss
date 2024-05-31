@@ -1,1 +1,130 @@
-//
+.social {
+  padding: 0 20px;
+}
+
+.social__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.social__list::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+  top: 16px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.social__list::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+  top: 78px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.social__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.social__link--vkontakte::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/stack.svg#icon-vk");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  width: 27px;
+  height: 17px;
+  left: -64px;
+  top: 40px;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    left: -48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+    left: -48px;
+  }
+}
+
+.social__link--youtube::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/stack.svg#icon-youtube");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  width: 24px;
+  height: 19px;
+  left: -12px;
+  top: 39px;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+    left: 4px;
+  }
+}
+
+.social__link--telegram::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/stack.svg#icon-telegram");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  width: 20px;
+  height: 17px;
+  left: 42px;
+  top: 40px;
+
+  @media (min-width: $tablet-width) {
+    top: -7px;
+    left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -9px;
+    left: 59px;
+  }
+}
+
+.social__link--vkontakte:hover::after,
+.social__link--youtube:hover::after,
+.social__link--telegram:hover::after {
+  background-color: $bg-color-green;
+}
+
+.social__link--vkontakte:active::after,
+.social__link--youtube:active::after,
+.social__link--telegram:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
+}

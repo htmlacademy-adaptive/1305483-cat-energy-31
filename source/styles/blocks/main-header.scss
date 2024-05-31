@@ -1,5 +1,79 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+  margin: 0;
+  padding: 13px 21px 0 20px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 34px 63px 30px;
+    border-bottom: none;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 70px;
+    background-color: transparent;
+  }
+}
+
+.main-header--index {
+  @media (min-width: $desktop-width) {
+    min-height: 175px;
+    background-image: linear-gradient(to right, transparent 50%, #62a53a 50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-bottom: none;
+    padding: 55px 110px 65px;
+  }
+}
+
+.main-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-header__inner {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+}
+
+.main-header__logo {
+  margin-right: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
+
+
+.main-header__title {
+  margin-right: 90px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }

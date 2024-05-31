@@ -1,1 +1,13 @@
-//
+.page__body--index::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/cat-bg-desktop-index@2x.png");
+    background-size: cover;
+    width: 50%;
+    height: 694px;
+    object-fit: fill;
+    z-index: 5;
+    left: 50%;
+  }
+}

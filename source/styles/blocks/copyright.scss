@@ -1,6 +1,60 @@
+.copyright {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .copyright__link {
+  display: block;
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  position: relative;
+  margin-bottom: 48px;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-right: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.copyright__link::after {
+  position: absolute;
+  content: "";
+  mask-image: url("../../icons/stack.svg#icon-html-academy");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  width: 27px;
+  height: 34px;
+  right: 0;
+  top: 18px;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+  }
+}
+
+.copyright__link:hover::after {
+  background-color: $bg-color-green;
+}
+
+.copyright__link:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.copyright__link:active::after {
+  background-color: rgba(104, 183, 56, 0.3);
 }
