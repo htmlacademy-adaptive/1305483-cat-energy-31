@@ -1,0 +1,37 @@
+.button {
+  background-color: $bg-color-green;
+  color: #ffffff;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--secondary {
+  background-color: #f2f2f2;
+  color: #444444;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: rgba(68, 68, 68, 0.3);
+}

@@ -1,0 +1,149 @@
+.hero {
+  font-family: $oswald-font;
+  color: #ffffff;
+  background-image:
+    url("../../images/bg-green-cat-mobile@2x.png"),
+    linear-gradient(180deg, #62a53a 302px, transparent 302px);
+  background-repeat: no-repeat;
+  background-size:
+    320px 302px,
+    100% 100%;
+  background-position: center top;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    background-image: none;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 510px;
+    background-image: linear-gradient(to right, transparent 50%, #62a53a 50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 800px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1500px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 27px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    text-align: left;
+    padding-left: 120px;
+    max-width: 545px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+    padding-left: 190px;
+    max-width: 610px;
+  }
+}
+
+.hero__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    margin-top: 38px;
+    margin-bottom: 52px;
+  }
+}
+
+.hero img {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: 201px;
+    left: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    z-index: -1;
+    top: -39px;
+    left: 558px;
+  }
+}
+
+.hero__link {
+  display: block;
+  margin: 3px 20px 20px;
+  padding: 10px 63px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 26px;
+    width: 244px;
+    margin: 0;
+    margin-left: 120px;
+    margin-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    margin-bottom: 266px;
+  }
+}
