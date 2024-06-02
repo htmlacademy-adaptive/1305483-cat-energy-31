@@ -120,6 +120,11 @@
     align-items: center;
     margin-left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    max-width: 580px;
+  }
 }
 
 .main-nav__item {
