@@ -8,18 +8,18 @@
   border: none;
   display: block;
   width: 100%;
-  background-image: url("../../images/map-mobile@2x.png");
+  background-image: image-set("../../images/map-mobile@1x.png" 1x, "../../images/map-mobile@2x.png" 2x);
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background-image: url("../../images/map-tablet@2x.png");
+    background-image: image-set("../../images/map-tablet@1x.png" 1x, "../../images/map-tablet@2x.png" 2x);
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    background-image: url("../../images/map-desktop@2x.png");
+    background-image: image-set("../../images/map-desktop@1x.png" 1x, "../../images/map-desktop@2x.png" 2x);
   }
 }
 
