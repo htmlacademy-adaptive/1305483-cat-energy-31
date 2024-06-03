@@ -110,6 +110,8 @@
   width: 100%;
   padding: 10px 15px;
   text-align: center;
+  text-decoration: none;
+  display: block;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
