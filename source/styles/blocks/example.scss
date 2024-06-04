@@ -2,16 +2,13 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(180deg, #ffffff 574px, #eaeaea 462px);
+    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
     background-repeat: no-repeat;
-    background-size:
-      100% 574px,
-      100% 462px;
-    background-position: center top;
+    background-position: center bottom;
   }
 
   @media (min-width: $desktop-width) {
-    height: 598px;
+    min-height: 598px;
     background-image: linear-gradient(180deg, #ffffff 138px, #eaeaea 138px);
     background-repeat: no-repeat;
     background-size:

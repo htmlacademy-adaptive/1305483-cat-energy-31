@@ -118,7 +118,7 @@
 .additional-products__offer {
   width: 100%;
   max-width: 1920px;
-  background-image: url("../../images/bg-cat-house-mobile@2x.png");
+  background-image: image-set("../../images/bg-cat-house-mobile@1x.png" 1x, "../../images/bg-cat-house-mobile@2x.png" 2x);
   background-size: 280px auto;
   background-position: center top;
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 70px;
-    background-image: url("../../images/bg-cat-house-tablet@2x.png");
+    background-image: image-set("../../images/bg-cat-house-tablet@1x.png" 1x, "../../images/bg-cat-house-tablet@2x.png" 2x);
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
@@ -139,7 +139,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    background-image: url("../../images/bg-cat-house-desktop@2x.png");
+    background-image: image-set("../../images/bg-cat-house-desktop@1x.png" 1x, "../../images/bg-cat-house-desktop@2x.png" 2x);
     background-size: 245px 288px;
     background-position: left top;
     background-repeat: no-repeat;

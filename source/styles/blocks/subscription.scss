@@ -148,8 +148,23 @@
   margin: 24px 0 0;
   padding: 12px;
   width: 100%;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   outline: none;
+}
+
+.subscription__email:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.subscription__email:focus,
+.subscription__email:active {
+  outline: 1px solid #444444;
+  border: 1px solid #444444;
+}
+
+.subscription__email:not(:focus):not(:placeholder-shown):invalid {
+  outline: 1px solid #ff8282;
+  border: 1px solid #ff8282;
 }
 
 .subscription__button {

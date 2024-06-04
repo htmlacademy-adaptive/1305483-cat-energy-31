@@ -2,7 +2,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-    background-image: url("../../images/cat-bg-desktop-index@2x.png");
+    background-image: image-set("../../images/cat-bg-desktop-index@1x.png" 1x, "../../images/cat-bg-desktop-index@2x.png" 2x);
     background-size: cover;
     width: 50%;
     height: 694px;
